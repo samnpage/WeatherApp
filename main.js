@@ -63,7 +63,7 @@ function displayResults(json) {
         } else {  
         };
     }
-
+    console.log(json)
     changeFontColor()
     
     article.appendChild(heading);
