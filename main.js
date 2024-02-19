@@ -13,6 +13,13 @@ const section = document.querySelector('section');
 
 // Event Listeners
 searchForm.addEventListener('submit', fetchResults);
+searchTerm.addEventListener('click', function() {
+    searchTerm.placeholder = 'City, State';
+});
+
+searchTerm.addEventListener('blur', function() {
+    searchTerm.placeholder = 'Enter in location';
+});
 
 // Results Function
 function fetchResults(e) {
